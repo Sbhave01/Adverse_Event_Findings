@@ -127,7 +127,7 @@ This ensures the **final classification is interpretable** and **medically meani
 
 ---
 
-## **▶ Usage**
+## ** Usage**
 
 ### **Run the CrewAI Pipeline**
 
