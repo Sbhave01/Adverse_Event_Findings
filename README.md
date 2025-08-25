@@ -42,18 +42,30 @@ These agents **communicate internally** within CrewAI, reducing API round trips 
 
 ---
 
-## ** System Architecture**
+## **System Architecture**
 
-### **Workflow Diagram**
+### **Workflow**
 
-```mermaid
-flowchart TD
-    A[User Inputs FOI Report] --> B[Classifier Agent (Phi-3 Mini + LoRA)]
-    B --> C[Keyword Agent (KeyBERT + Custom AE Dictionary)]
-    C --> D[Explanation Agent (Mistral via Ollama)]
-    D --> E[Structured JSON Output]
+1. **User Input**  
+   - User provides an FOI report for analysis.
 
-```
+2. **Classifier Agent (Phi-3 Mini + LoRA)**  
+   - Predicts the **adverse event type** (e.g., malfunction, injury, death).
+   - Outputs the **predicted label** and confidence score.
+
+3. **Keyword Extraction (KeyBERT + Custom AE Dictionary)**  
+   - Extracts important **adverse event keywords**.
+   - Uses similarity matching to highlight related terms.
+
+4. **Explanation Agent (Mistral via Ollama)**  
+   - Generates a **concise explanation** of the results.
+
+5. **Final Output**  
+   - Returns a **structured JSON** containing:
+     - Predicted label  
+     - Extracted keywords  
+     - Explanation
+
 ---
 
 ## ** Tech Stack**
