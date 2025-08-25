@@ -48,12 +48,11 @@ These agents **communicate internally** within CrewAI, reducing API round trips 
 
 ```mermaid
 flowchart TD
-    A[User Inputs FOI Report] --> B[Classifier Agent<br>(Phi-3 Mini + LoRA)]
-    B -->|Predicted Label + Probabilities| C[Keyword Agent<br>(KeyBERT + Custom AE Dictionary)]
-    C -->|Extracted Keywords + Similarity Scores| D[Explanation Agent<br>(Mistral via Ollama)]
+    A[User Inputs FOI Report] --> B[Classifier Agent (Phi-3 Mini + LoRA)]
+    B -->|Predicted Label + Probabilities| C[Keyword Agent (KeyBERT + Custom AE Dictionary)]
+    C -->|Extracted Keywords + Similarity Scores| D[Explanation Agent (Mistral via Ollama)]
     D -->|Concise Explanation| E[Structured JSON Output]
 ```
-
 ---
 
 ## ** Tech Stack**
