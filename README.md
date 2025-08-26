@@ -161,7 +161,7 @@ print(result)
 ---
 ## 🚀 Demo
 
-![Demo](demo/video2.mp4)
+![Demo](demo/video2.gif)
 ---
 
 ## ** Advantages**
