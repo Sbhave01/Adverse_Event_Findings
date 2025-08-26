@@ -1,0 +1,46 @@
+# Core frameworks
+gradio==5.42.0                # Web UI for report classification
+fastapi==0.116.1              # Backend API (if used)
+uvicorn==0.35.0               # ASGI server to run FastAPI
+
+# CrewAI Orchestration
+crewai==0.165.1               # Orchestrates agents for classification + explanation
+
+# Model & Transformers
+torch==2.7.1+cu118            # PyTorch for model inference
+transformers==4.53.1          # HuggingFace Transformers for Phi-3 + LoRA
+accelerate==1.8.1             # Accelerates large model inference
+peft==0.16.0                   # LoRA fine-tuning support
+sentence-transformers==5.1.0  # For embedding-based similarity
+ollama==0.5.3                 # Running Mistral/Phi-3 models locally via Ollama
+
+# Keyword Extraction
+keybert==0.9.0                # Extracts keywords using embeddings
+scikit-learn==1.7.0           # Required for KeyBERT backend
+nltk==3.9.1                   # NLP utilities (tokenization, stopwords)
+
+# Data Processing & Visualization
+pandas==2.3.1                 # Tabular data processing
+numpy==2.2.6                  # Numerical computations
+matplotlib==3.10.3            # Plots similarity scores
+seaborn==0.13.2               # Enhances visualization aesthetics
+
+# LLM Prompting
+langchain==0.3.27             # Manages prompt templates + LLM chaining
+langchain-community==0.3.27   # Community integrations for LangChain
+
+# Evaluation Metrics
+bert-score==0.3.13            # Semantic similarity evaluation
+
+# PDF/Document Handling (if needed for MAUDE datasets)
+pdfplumber==0.11.7            # Parse PDFs if you integrate reports
+
+# Utilities & Essential Tools
+tqdm==4.67.1                  # Progress bars for inference/training
+requests==2.32.4              # API requests
+python-dotenv==1.1.1          # For environment variables
+pydantic==2.11.7              # Data validation and parsing
+
+# Optional but recommended for deployment
+openai==1.99.9                # If using OpenAI fallback APIs
+huggingface-hub==0.34.4       # Download & manage models from HF Hub
