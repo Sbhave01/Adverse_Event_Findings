@@ -1,5 +1,5 @@
 
-# **Adverse Event Classification & Explainable AI Pipeline "MEDAE_FINDER" **
+# **Adverse Event Classification & Explainable AI Pipeline "MED-AE FINDER" **
 > **Powered by CrewAI · Fine-Tuned Phi-3 Mini Instruct · Hybrid Evidence + Keyword Extraction**
 
 ---
@@ -158,7 +158,10 @@ print(result)
   "summary": "The device likely malfunctioned due to pump stoppage and occlusion alarms, but the patient recovered after device reset."
 }
 ```
+---
+## 🚀 Demo
 
+![Demo](demo/video2.mp4)
 ---
 
 ## ** Advantages**
