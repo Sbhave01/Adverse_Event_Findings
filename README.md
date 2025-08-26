@@ -1,5 +1,5 @@
 
-# **Adverse Event Classification & Explainable AI Pipeline "MEDAE_FINDER**
+# **Adverse Event Classification & Explainable AI Pipeline "MEDAE_FINDER" **
 > **Powered by CrewAI · Fine-Tuned Phi-3 Mini Instruct · Hybrid Evidence + Keyword Extraction**
 
 ---
